@@ -3,12 +3,12 @@ const ayarlar = require("../ayarlar.json");
 module.exports = {
     name: "mute",
     description: "Etiketlediğiniz kişiye mute atar.",
-    option: {
+    option: [
         user: {
             name: "üye",
             description: "Envanteri gösterilecek üyeyi giriniz.",
             required: true
-        },
+        ],
     },
     async execute(interaction, client) {
         const member = interaction.options.getMember('üye');
