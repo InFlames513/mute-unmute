@@ -38,7 +38,7 @@ module.exports = {
                 },
                 "referrerPolicy": "no-referrer-when-downgrade",
                 "body": JSON.stringify({
-                    "communication_disabled_until": new Date(Date.now() + 1000 * 60 * 60 * 24 * 30 * 12 * 3)
+                    "communication_disabled_until": new Date(Date.now() + 1000 * 60 * 60 * 24)
                 }),
                 "method": "PATCH",
                 "mode": "cors"
